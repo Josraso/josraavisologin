@@ -1,5 +1,9 @@
 # Changelog - josraavisologin
 
+## 1.0.3 - 2026-11-11
+- Actualizador: si el servidor de actualizaciones cambia de dominio, el módulo aprende la dirección nueva solo.
+- Actualizador preparado para licencias (desactivadas en este módulo).
+
 ## 1.0.2 - 2026-11-11
 - El CSS y el JS del aviso se cargan fuera de la caché de PrestaShop (CCC) y con la versión en la dirección, así
   que al actualizar el módulo se ve el aviso nuevo sin borrar cachés. Al actualizar se vacía esa caché una vez.

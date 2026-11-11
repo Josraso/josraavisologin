@@ -28,7 +28,7 @@ class Josraavisologin extends Module
     {
         $this->name = 'josraavisologin';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.2';
+        $this->version = '1.0.3';
         $this->author = 'josra';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -83,7 +83,7 @@ class Josraavisologin extends Module
         // Aviso al servidor de actualizaciones (no impide desinstalar si no responde)
         $this->getUpdater()->notifyUninstall();
 
-        foreach ([self::C_ENABLED, self::C_TEXT, self::C_LINK, self::C_WHEN, 'JOSRAAVISOLOGIN_UPD_TS', 'JOSRAAVISOLOGIN_UPD_INFO'] as $key) {
+        foreach ([self::C_ENABLED, self::C_TEXT, self::C_LINK, self::C_WHEN, 'JOSRAAVISOLOGIN_UPD_TS', 'JOSRAAVISOLOGIN_UPD_INFO', 'JOSRAAVISOLOGIN_UPD_SU', 'JOSRAAVISOLOGIN_UPD_LT'] as $key) {
             Configuration::deleteByName($key);
         }
 
