@@ -1,0 +1,113 @@
+/* josraavisologin: aviso muy visible junto a los formularios de acceso */
+.josra-aviso-login {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 0 0 20px 0;
+  padding: 18px 20px;
+  border: 2px solid #ffb703;
+  border-radius: 10px;
+  background: #fff6db;
+  color: #141a2b;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(20, 26, 43, 0.12);
+}
+.josra-aviso-login.is-hidden {
+  display: none;
+}
+.josra-aviso-login__icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffb703;
+  color: #141a2b;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
+}
+.josra-aviso-login__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.josra-aviso-login .josra-aviso-login__title {
+  margin: 0 0 6px 0;
+  font-size: 21px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #141a2b;
+}
+.josra-aviso-login .josra-aviso-login__text {
+  margin: 0 0 14px 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #141a2b;
+}
+.josra-aviso-login .josra-aviso-login__btn,
+.josra-aviso-login .josra-aviso-login__btn:visited {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 8px;
+  background: #143ab5;
+  color: #ffffff !important;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+.josra-aviso-login .josra-aviso-login__btn:hover,
+.josra-aviso-login .josra-aviso-login__btn:focus {
+  background: #0f2c8c;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Tras un intento fallido: en rojo */
+.josra-aviso-login.is-alert {
+  border-color: #d0021b;
+  background: #fdecec;
+}
+.josra-aviso-login.is-alert .josra-aviso-login__icon {
+  background: #d0021b;
+  color: #ffffff;
+}
+.josra-aviso-login.is-shake {
+  animation: josra-aviso-shake 0.6s ease-in-out;
+}
+@keyframes josra-aviso-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .josra-aviso-login.is-shake { animation: none; }
+}
+
+/* Móvil: algo más compacto, pero con letra grande y el botón a todo el ancho */
+@media (max-width: 575px) {
+  .josra-aviso-login {
+    gap: 10px;
+    padding: 14px;
+  }
+  .josra-aviso-login__icon {
+    width: 32px;
+    height: 32px;
+    font-size: 21px;
+  }
+  .josra-aviso-login .josra-aviso-login__title {
+    font-size: 19px;
+  }
+  .josra-aviso-login .josra-aviso-login__text {
+    font-size: 16px;
+  }
+  .josra-aviso-login .josra-aviso-login__btn {
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 17px;
+  }
+}
