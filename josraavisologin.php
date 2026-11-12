@@ -28,7 +28,7 @@ class Josraavisologin extends Module
     {
         $this->name = 'josraavisologin';
         $this->tab = 'front_office_features';
-        $this->version = '1.0.4';
+        $this->version = '1.0.5';
         $this->author = 'josra';
         $this->need_instance = 0;
         $this->bootstrap = true;
