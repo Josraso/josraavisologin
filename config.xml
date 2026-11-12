@@ -2,7 +2,7 @@
 <module>
     <name>josraavisologin</name>
     <displayName><![CDATA[Aviso en el inicio de sesión]]></displayName>
-    <version><![CDATA[1.0.3]]></version>
+    <version><![CDATA[1.0.4]]></version>
     <description><![CDATA[Avisa en todos los formularios de acceso de que, si no recuerdas la contraseña o no te la acepta, la restablezcas, con el enlace directo.]]></description>
     <author><![CDATA[josra]]></author>
     <tab><![CDATA[front_office_features]]></tab>
